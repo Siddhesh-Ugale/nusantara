@@ -15,8 +15,9 @@ body {
     height:100%;
     position:fixed;
     z-index:9999;
-    background:url("loader.gif") no-repeat center center rgba(0,0,0,0.5);
-    background-size: 8%;
+    background:url("N-monogram.png") no-repeat center center rgba(0,0,0,0.5);
+    background-size: 18%;
+    animation: blink 2s infinite;
 }
 #diff{
     display: flex;
@@ -30,4 +31,16 @@ body {
 }
 #diff h2{
     font-size: 1.25rem;
+}
+
+@keyframes blink {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
